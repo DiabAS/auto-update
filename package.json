@@ -9,7 +9,9 @@
     "patch": "npm version patch",
     "build": "electron-builder"
   },
-  "repository": "https://github.com/DiabAS/auto-update.git",
+  "repository": {
+    "url": "https://github.com/DiabAS/auto-update.git"
+  },
   "keywords": [
     "Electron",
     "quick",
@@ -30,14 +32,10 @@
   },
   "build": {
     "win": {
-      "target": "squirrel",
-      "artifactName": "setup.${ext}"
-    },
-    "directories": {
-      "output": "./releases/${platform}"
+      "target": "squirrel"
     }
   },
   "updater": {
-    "url": "http://localhost/update/updates.json"
+    "url": "https://raw.githubusercontent.com/DiabAS/auto-update/master/updates.json"
   }
 }

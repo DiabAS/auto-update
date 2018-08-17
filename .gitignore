@@ -3,3 +3,4 @@ node_modules
 releases
 publisher.json
 updates.json
+dist
