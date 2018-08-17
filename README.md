@@ -1,1 +1,1 @@
-# first-auto-update
+# auto-update

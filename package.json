@@ -1,0 +1,43 @@
+{
+  "name": "auto-update",
+  "version": "1.0.10",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "commit": "git add . && git commit -m \"next patch\"",
+    "patch": "npm version patch",
+    "build": "electron-builder"
+  },
+  "repository": "https://github.com/DiabAS/auto-update.git",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^2.0.0",
+    "electron-builder": "^20.28.1",
+    "electron-builder-squirrel-windows": "^20.28.0",
+    "electron-simple-publisher": "^0.4.12"
+  },
+  "dependencies": {
+    "electron-simple-updater": "^1.2.3"
+  },
+  "build": {
+    "win": {
+      "target": "squirrel",
+      "artifactName": "setup.${ext}"
+    },
+    "directories": {
+      "output": "./releases/${platform}"
+    }
+  },
+  "updater": {
+    "url": "http://localhost/update/updates.json"
+  }
+}
