@@ -4,3 +4,4 @@ releases
 publisher.json
 updates.json
 dist
+package-lock.json
