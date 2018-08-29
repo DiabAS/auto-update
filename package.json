@@ -11,6 +11,7 @@
     "publish": "node_modules/.bin/publish"
   },
   "repository": {
+    "type" : "git",
     "url": "https://github.com/DiabAS/auto-update.git"
   },
   "keywords": [
@@ -34,6 +35,9 @@
   "build": {
     "win": {
       "target": "squirrel"
+    },
+    "squirrelWindows": {
+      "iconUrl": "https://raw.githubusercontent.com/DiabAS/auto-update/master/dist/assets/icon.ico"
     }
   },
   "updater": {

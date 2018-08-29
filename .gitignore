@@ -3,5 +3,6 @@ node_modules
 releases
 publisher.json
 updates.json
-dist
+dist/squirrel-windows
+dist/win-unpacked
 package-lock.json
