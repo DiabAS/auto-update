@@ -1,7 +1,0 @@
-{
-  "win32-x64-prod": {
-    "update": "https://github.com/DiabAS/auto-update/releases/download/win32-x64-prod-v1.0.12",
-    "install": "https://github.com/DiabAS/auto-update/releases/download/win32-x64-prod-v1.0.12/auto-update.Setup.1.0.12.exe",
-    "version": "1.0.12"
-  }
-}
