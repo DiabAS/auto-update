@@ -2,7 +2,10 @@
 const {app, BrowserWindow} = require('electron');
 const updater              = require('electron-simple-updater');
 
-updater.init({});
+updater.init({
+    // checkUpdateOnStart: false,
+    // autoDownload: false
+});
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
