@@ -11,7 +11,7 @@
     "publish": "node_modules/.bin/publish"
   },
   "repository": {
-    "type" : "git",
+    "type": "git",
     "url": "https://github.com/DiabAS/auto-update.git"
   },
   "keywords": [
