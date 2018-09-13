@@ -1,45 +1,46 @@
 {
-  "name": "auto-update",
-  "version": "0.0.1",
-  "description": "A minimal Electron application",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "commit": "git add . && git commit -m \"next patch\"",
-    "patch": "npm version patch",
-    "build": "electron-builder",
-    "publish": "node_modules/.bin/publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DiabAS/auto-update.git"
-  },
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "DiabAS",
-  "devDependencies": {
-    "electron": "^2.0.0",
-    "electron-builder": "^20.28.1",
-    "electron-builder-squirrel-windows": "^20.28.0",
-    "electron-simple-publisher": "^0.4.12"
-  },
-  "dependencies": {
-    "electron-simple-updater": "^1.2.3"
-  },
-  "build": {
-    "win": {
-      "target": "squirrel"
+    "name": "auto-update",
+    "version": "0.0.1",
+    "description": "A minimal Electron application",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "commit": "git add . && git commit -m \"next patch\"",
+        "patch": "npm version patch",
+        "build": "electron-builder",
+        "publish": "node_modules/.bin/publish"
     },
-    "squirrelWindows": {
-      "iconUrl": "https://raw.githubusercontent.com/DiabAS/auto-update/master/dist/assets/icon.ico"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DiabAS/auto-update.git"
+    },
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "_Di@bAS",
+    "devDependencies": {
+        "electron": "^2.0.0",
+        "electron-builder": "^20.28.1",
+        "electron-builder-squirrel-windows": "^20.28.0",
+        "electron-simple-publisher": "^0.4.12"
+    },
+    "dependencies": {
+        "electron-simple-updater": "^1.2.3"
+    },
+    "build": {
+        "win": {
+            "target": "squirrel"
+        },
+        "squirrelWindows": {
+            "iconUrl": "https://raw.githubusercontent.com/DiabAS/auto-update/master/dist/assets/icon.ico"
+        },
+        "icon": "dist/assets/icon.ico"
+    },
+    "updater": {
+        "url": "https://raw.githubusercontent.com/DiabAS/auto-update/master/updates.json"
     }
-  },
-  "updater": {
-    "url": "https://raw.githubusercontent.com/DiabAS/auto-update/master/updates.json"
-  }
 }
