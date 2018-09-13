@@ -21,8 +21,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "DiabAS",
   "devDependencies": {
     "electron": "^2.0.0",
     "electron-builder": "^20.28.1",
